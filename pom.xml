@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>xin.altitude.demo</groupId>
+    <artifactId>mybatisplus-study</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <description>SpringBoot MybatisPlus 单表查询 多表连接查询</description>
+    <packaging>pom</packaging>
+    
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+    </properties>
+    
+    <modules>
+        <module>066-mybatisplus-pk-backfill-demo</module>
+        <module>082-one-to-one-list-demo</module>
+        <module>083-one-to-one-page-demo</module>
+        <module>085-one-to-more-list-demo</module>
+        <module>086-one-to-more-page-demo</module>
+        <module>087-more-to-more-pk-demo</module>
+    </modules>
+
+</project>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>2.6.3</version>
+        <relativePath/>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>xin.altitude.cms.demo</groupId>
+    <artifactId>086-one-to-more-page-demo</artifactId>
+    <name>${project.artifactId}</name>
+    <description>
+        UCode Cms 代码生成器演示项目
+    </description>
+    <url>http://www.altitude.xin</url>
+    
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        
+        <dependency>
+            <groupId>xin.altitude.cms</groupId>
+            <artifactId>ucode-cms-common</artifactId>
+            <version>1.5.9.2</version>
+        </dependency>
+    
+        <!--代码本地化生成依赖-->
+        <dependency>
+            <groupId>xin.altitude.cms</groupId>
+            <artifactId>ucode-cms-code-spring-boot-starter</artifactId>
+            <version>1.5.9.2</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.1.RELEASE</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+    
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>maven nexus</name>
+            <url>https://repo1.maven.org/maven2/</url>
+            <snapshots>
+                <updatePolicy>always</updatePolicy>
+            </snapshots>
+            <releases>
+                <updatePolicy>always</updatePolicy>
+            </releases>
+        </repository>
+    </repositories>
+
+</project>
