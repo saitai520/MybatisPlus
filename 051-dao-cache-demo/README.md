@@ -4,7 +4,7 @@
 #### 1、添加依赖
 
 ```xml
-<!--抢先测试版本1.6.1.1 发布版本1.6.2-->
+<!--发布版本1.6.2-->
 <dependency>
     <groupId>xin.altitude.cms</groupId>
     <artifactId>ucode-cms-common</artifactId>

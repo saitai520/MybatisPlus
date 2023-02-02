@@ -25,6 +25,7 @@
         <module>085-one-to-more-list-demo</module>
         <module>086-one-to-more-page-demo</module>
         <module>087-more-to-more-pk-demo</module>
+        <module>mybatisplus-joinquery</module>
     </modules>
 
 </project>
