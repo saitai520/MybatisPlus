@@ -1,0 +1,28 @@
+# 开发环境配置
+server:
+  # 服务器的HTTP端口，默认为8080
+  port: 8080
+
+# Spring配置
+spring:
+  jackson:
+    date-format: 'yyyy-MM-dd HH:mm:ss'
+    time-zone: 'GMT+8'
+    mapper:
+      # 格式化JSON按照字典顺序排序
+      sort-properties-alphabetically: false
+  config:
+    use-legacy-processing: true
+  main:
+    allow-circular-references: true
+  profiles:
+    active: dev
+
+
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+logging:
+  level:
+    xin.ucode: debug

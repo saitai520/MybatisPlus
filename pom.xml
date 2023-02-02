@@ -17,6 +17,8 @@
     </properties>
     
     <modules>
+        <module>051-dao-cache-demo</module>
+        <module>052-dao-cache-lock-demo</module>
         <module>066-mybatisplus-pk-backfill-demo</module>
         <module>082-one-to-one-list-demo</module>
         <module>083-one-to-one-page-demo</module>
